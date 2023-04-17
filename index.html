@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="granja.css">
+    <title>home
+
+    </title>
+</head>
+<header>
+<h1>Aviário</h1>
+</header>
+<body>
+<div class="container">
+  <div class="row"><table border="1">
+    <tbody>
+       
+      <tr>
+        <td>Galinhas</td>
+        <td><div id="outGalinhas"></div></td>
+        <td><button onclick="subGalinhas()">  -  </button>
+            <input type="number" id="galinhas" placeholder="galinhas" value="1"  >
+            <button onclick="addGalinhas()">  +  </button></td>
+        <td><div id="outPorcentGalinhas"></div> </td>
+      </tr>
+      <tr>
+        <td>Galos</td>
+        <td><div id="outGalos"></div></td>
+        <td><button onclick="subGalos()">-</button>
+          <input type="number" id="galos" placeholder="galos" value="1">
+          <button onclick="addGalos()">+</button></td>
+          <td><div id="outPorcentGalos"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos Trincados</td>
+        <td><div id="outTrincados"></div></td>
+        <td><button onclick="subTrincados()">-</button>
+          <input type="number" id="Trincados" placeholder="Trincados" value="1">
+          <button onclick="addTrincados()">+</button></td>
+          <td><div id="outPorcentTrincados"></div> </td>
+      <tr>
+      <tr>
+        <td>Ovos Incubáveis</td>
+        <td><div id="outIncubaveis"></div></td>
+        <td><button onclick="subIncubaveis()">-</button>
+          <input type="number" id="incubaveis" placeholder="Incubaveis" value="1">
+          <button onclick="addIncubaveis()">+</button></td>
+          <td><div id="outPorcentIncubaveis"></div> </td>
+      <tr>
+        <td>Ovos sujos de ninho</td>
+        <td><div id="outSujosNinho"></div></td>
+        <td><button onclick="subSujosNinho()">-</button>
+          <input type="number" id="SujosNinho" placeholder="Sujos de Ninho" value="1">
+          <button onclick="addSujosNinho()">+</button></td>
+          <td><div id="outPorcentSujosNinho"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos sujos de cama</td>
+        <td><div id="outSujosCama"></div></td>
+        <td><button onclick="subSujosCama()">-</button>
+          <input type="number" id="SujosCama" placeholder="Sujos de Cama" value="1">
+          <button onclick="addSujosCama()">+</button></td>
+          <td><div id="outPorcentSujosCama"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos deformados</td>
+        <td><div id="outDeformados"></div></td>
+        <td><button onclick="subDeformados()">-</button>
+          <input type="number" id="Deformados" placeholder="Deformados" value="1">
+          <button onclick="addDeformados()">+</button></td>
+          <td><div id="outPorcentDeformados"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos duas gemas</td>
+        <td><div id="outDuasGemas"></div></td>
+        <td><button onclick="subDuasGemas()">-</button>
+          <input type="number" id="DuasGemas" placeholder="Duas Gemas" value="1">
+          <button onclick="addDuasGemas()">+</button></td>
+          <td><div id="outPorcentDuasGemas"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos casca fina</td>
+        <td><div id="outCascaFina"></div></td>
+        <td><button onclick="subCascaFina()">-</button>
+          <input type="number" id="CascaFina" placeholder="Casca Fina" value="1">
+          <button onclick="addCascaFina()">+</button></td>
+          <td><div id="outPorcentCascaFina"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos manchados</td>
+        <td><div id="outManchados"></div></td>
+        <td><button onclick="subManchados()">-</button>
+          <input type="number" id="Manchados" placeholder="Manchados" value="1">
+          <button onclick="addManchados()">+</button></td>
+          <td><div id="outPorcentManchados"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos pequenos</td>
+        <td><div id="outPequenos"></div></td>
+        <td><button onclick="subPequenos()">-</button>
+          <input type="number" id="Pequenos" placeholder="Pequenos" value="1">
+          <button onclick="addPequenos()">+</button></td>
+          <td><div id="outPorcentPequenos"></div> </td>
+      </tr>
+    </tbody>
+  </table></div>
+  <br><br>
+  <div class="row">
+    <div>
+      <table border="2">
+        <tbody>
+          <tr>
+            <td>Valor Unitário do Ovo</td>
+            <td>
+              <input type="number" id="inValorUnitario" placeholder="valor Unitário" value="0">
+            </td>
+            <td><button onclick="atualizarValor()">Atualizar</button></td>
+          </tr>
+          <tr>
+            <td>Ovos incubaveis</td>
+            <td><div id="outIncubaveis2"></div></td>
+            <td>R$:<div id="outValorIncubaveis"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row
+  "><table border="2">
+    <body>
+      <tr>
+        <td>Ovos Lavados</td>
+        <td><div id="outLavados"></div></td>
+        <td><div id="outPorcentLavados"></div> </td>
+      </tr> 
+      <tr>
+        <td>Ovos de mercado</td>
+        <td><div id="outMercado"></div></td>
+        <td><div id="outPorcentMercado"></div> </td>
+      </tr>
+      <tr>
+        <td>Ovos coletados</td>
+        <td><div id="outColetados"></div></td>
+        <td><div id="outPorcentColetados"></div> </td>
+      </tr>
+      <tr> 
+        <td>Ovos Bons</td>
+        <td><div id="outBons"></div></td>
+        <td><div id="outPorcentBons"></div> </td>
+      </tr>
+      <tr> 
+        <td>Ovos Eliminados</td>
+        <td><div id="outEliminados"></div></td>
+        <td><div id="outPorcentEliminados"></div> </td>
+      </tr>
+    </body>
+  </table></div>
+    
+  
+  <br>  
+</div>
+    
+    <script src="./logicaCrudAnimal.js"></script>
+    <br><br>
+   
+
+
+
+</body>
+</html>
