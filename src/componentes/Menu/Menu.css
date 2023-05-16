@@ -1,0 +1,17 @@
+
+.menu-principal{
+    position: fixed;
+    left: 0%;
+    background-color: #78943C;
+    height: 100%;
+    width: 180px;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.08);
+}
+
+#primeiro-botao{
+    margin-top: 70px;
+}
+
+#relatorios{
+    margin-top: 230px;
+}
