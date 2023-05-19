@@ -1,6 +1,6 @@
 
 import './App.css';
-import Menu from './componentes/Menu';
+import Menu from './frontend/componentes/Menu';
 
 function App() {
   return (
