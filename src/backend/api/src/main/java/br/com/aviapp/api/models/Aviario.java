@@ -8,4 +8,21 @@ public class Aviario {
   Ovos[] ovos;
 
   public Aviario() {}
+
+  public Integer getQuantidadeDeAvesMacho() {
+    return quantidadeDeAvesMacho;
+  }
+
+  public Integer getQuantidadeDeAvesFemea() {
+    return quantidadeDeAvesFemea;
+  }
+
+  public Integer getQuantidadeDeAvesMachoMortas() {
+    return quantidadeDeAvesMachoMortas;
+  }
+
+  public Integer getQuantidadeDeAvesFemeaMortas() {
+    return quantidadeDeAvesFemeaMortas;
+  }
+  
 }
