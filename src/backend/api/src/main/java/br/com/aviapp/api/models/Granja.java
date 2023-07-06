@@ -2,14 +2,27 @@ package br.com.aviapp.api.models;
 
 public class Granja {
   Endereco endereco;
-  Integer totalDeAvesMacho;
-  Integer totalDeAvesFemea;
-  Integer totalDeAvesMachoMortas;
-  Integer totalDeAvesFemeaMortas;
-  Integer totalDeOvos;
   Lote[] lotes;
-  Aviario[] aviarios;
 
-  public Granja() {};
+  public Granja(Endereco endereco) {
+    this.endereco = endereco;
+  }
+
+  public Endereco getEndereco() {
+    return this.endereco;
+  }
+
+  public void setEndereco(Endereco endereco) {
+    this.endereco = endereco;
+  }
+
+  public Lote[] getLotes() {
+    return this.lotes;
+  }
+
+  public void setLotes(Lote[] lotes) {
+    this.lotes = lotes;
+  }
+
   
 }
