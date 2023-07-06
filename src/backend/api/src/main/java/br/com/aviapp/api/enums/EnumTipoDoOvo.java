@@ -1,11 +1,11 @@
 package br.com.aviapp.api.enums;
 
-public enum EnumOvos {
+public enum EnumTipoDoOvo {
   MERCADO("Mercado");
 
   private final String tipoDoOvo;
 
-  EnumOvos(String tipoDoOvo) {
+  EnumTipoDoOvo(String tipoDoOvo) {
     this.tipoDoOvo = tipoDoOvo;
   }
 
