@@ -1,13 +1,13 @@
 package br.com.aviapp.api.models;
 
-import br.com.aviapp.api.enums.EnumOvos;
+import br.com.aviapp.api.enums.EnumTipoDoOvo;
 
-public class Ovos {
-  private EnumOvos tipoDoOvo;
+public class Ovo {
+  private EnumTipoDoOvo tipoDoOvo;
   private Integer quantidade;
   private Float valorTotal;
   
-  public Ovos(EnumOvos tipoDoOvo, Integer quantidade) {
+  public Ovo(EnumTipoDoOvo tipoDoOvo, Integer quantidade) {
     this.tipoDoOvo = tipoDoOvo;
     this.quantidade = quantidade;
   }
@@ -16,7 +16,7 @@ public class Ovos {
     return quantidade;
   }
 
-  public EnumOvos getTipoDoOvo() {
+  public EnumTipoDoOvo getTipoDoOvo() {
     return tipoDoOvo;
   }
 

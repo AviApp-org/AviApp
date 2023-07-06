@@ -5,7 +5,7 @@ public class Aviario {
   Integer quantidadeDeAvesFemea;
   Integer quantidadeDeAvesMachoMortas;
   Integer quantidadeDeAvesFemeaMortas;
-  Ovos[] ovos;
+  Ovo[] ovos;
 
   public Aviario() {}
 
