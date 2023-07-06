@@ -1,7 +1,7 @@
 package br.com.aviapp.api.models;
 
 public class Endereco {
-  private String rua;
+  private String logradouro;
   private String cep;
   private String bairro;
   private String cidade;
@@ -13,20 +13,20 @@ public class Endereco {
     // construtor para pegar o endereco automatico
   }
 
-  public Endereco(String rua, String cep, String bairro, String cidade, String estado) {
-    this.rua = rua;
+  public Endereco(String logradouro, String cep, String bairro, String cidade, String estado) {
+    this.logradouro = logradouro;
     this.cep = cep;
     this.bairro = bairro;
     this.cidade = cidade;
     this.estado = estado;
   }
 
-  public String getRua() {
-    return this.rua;
+  public String getLogradouro() {
+    return this.logradouro;
   }
 
-  public void setRua(String rua) {
-    this.rua = rua;
+  public void setLogradouro(String logradouro) {
+    this.logradouro = logradouro;
   }
 
   public String getCep() {
